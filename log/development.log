@@ -4005,3 +4005,13 @@ Redirected to http://165.227.60.187:48875/posts/19
 Completed 302 Found in 20ms (ActiveRecord: 5.8ms)
 
 
+Started GET "/posts/19" for 104.227.193.90 at 2019-12-01 19:55:18 +0000
+Cannot render console from 104.227.193.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
